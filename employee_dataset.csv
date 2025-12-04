@@ -1,0 +1,16 @@
+Employee_ID,Department,Region,Performance_Score,Salary
+E001,Sales,North,85,65000
+E002,IT,South,92,80000
+E003,HR,East,78,55000
+E004,Sales,West,88,70000
+E005,IT,North,95,85000
+E006,Marketing,South,82,60000
+E007,Sales,East,90,72000
+E008,Finance,West,87,75000
+E009,IT,North,91,82000
+E010,Sales,South,84,68000
+E011,HR,East,79,56000
+E012,Marketing,West,83,62000
+E013,Sales,North,89,71000
+E014,Finance,South,86,74000
+E015,IT,East,93,83000
