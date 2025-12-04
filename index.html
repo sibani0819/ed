@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Analysis</title>
+</head>
+<body>
+    <h1>Employee Performance Analysis</h1>
+    <p>Email: 23f3003311@ds.study.iitm.ac.in</p>
+    
+    <h2>Python Code</h2>
+    <pre>
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv('employee_data.csv')
+
+sales_count = df[df['Department'] == 'Sales'].shape[0]
+print(f"Sales Department Frequency: {sales_count}")
+
+plt.figure(figsize=(10, 6))
+sns.histplot(data=df, x='Department', color='skyblue')
+plt.title('Distribution of Departments')
+plt.xlabel('Department')
+plt.ylabel('Number of Employees')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('department_distribution.png')
+plt.show()
+    </pre>
+    
+    <h2>Result</h2>
+    <p>Sales Department Count: 5</p>
+    
+    <h2>Histogram</h2>
+    <img src="department_distribution.png" alt="Department Distribution" width="800">
+</body>
+</html>
